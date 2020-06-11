@@ -1,0 +1,170 @@
+@dark: #313d4b; // 标题色
+@subTitleColor: #61676e; // 副标题色
+@light: #b5bbc4; // 灰色
+@linkColor: #1890ff; // 链接色
+@baseColor: #90959e; // 常规色
+@commonColor: #90959e; // 重复
+@borderColor: #d3d8db; // 边框色
+@tagBorderColor: #dde2eb; // 标签边框色
+@hrColor: #e8ebef; // 分割线
+@primaryColor: #ff8e42;
+@bgColor: #f1f4f7; // 背景色
+@bgColor1: #f5f8fa; // 表格背景色、表格移入背景色、
+@bgColor2: #e8ecef; // 自动化跟报表的背景色
+@gradeColor1: #8dc63f;
+@titleColor: #313d4b;
+@tableHeadColor: #f1f6f7;
+@linkBgColor: #e5f0f9;
+@linkBgColor1: #eef5fb;
+@formBgColor: #fafbfc;
+@reportBorder: #cae4f8;
+@reportRed: #ff42e1;
+@fff: #fff;
+@777: #777;
+@lgLeng: 24px;
+@mdLeng: 16px;
+@smLeng: 8px;
+@headerHeight: 54px;
+@tabActiveColor: #85a0c9;
+@deep: ~'>>>';
+
+.title(@size: 14px) {
+  font-size: @size;
+  font-weight: bold;
+  color: @dark;
+}
+
+h1,
+.h1 {
+  .title(20px);
+}
+
+h2,
+.h2 {
+  .title(18px);
+}
+
+h3,
+.h3 {
+  .title(16px);
+}
+
+h4,
+.h4 {
+  .title(14px);
+}
+
+h5,
+.h5 {
+  .title(13px);
+}
+
+h6,
+.h6 {
+  .title(12px);
+}
+
+.padding-xs {
+  padding: 8px;
+}
+
+.padding-md {
+  padding: 16px;
+}
+
+.padding-lg {
+  padding: 32px;
+}
+
+.padding-page {
+  padding: 24px 16px;
+}
+
+.title-color {
+  color: @dark;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.pos-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/*但航省略号*/
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ellipsis(@num: 2) {
+  display: -webkit-box;
+  overflow: hidden;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: @num;
+}
+
+/*float*/
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+/*transition*/
+
+.trans {
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@keyframes scaleout {
+  from {
+    transform: scale(0, 0);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+/*flex*/
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-bettwen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}

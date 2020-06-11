@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+htmle,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #262839;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+/*scroll bar*/
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  width: 5px;
+  border-radius: 5px;
+  background-color: #2b3042;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #262839;
+  -webkit-border-radius: 0;
+}
+
+::-moz-scrollbar {
+  height: 5px;
+  width: 5px;
+  -moz-appearance: none;
+}
+
+::-moz-scrollbar-thumb {
+  height: 40px;
+  width: 5px;
+  border-radius: 5px;
+  background-color: #262839;
+}
+
+//in out animation
+@keyframes LeftIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes LeftOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%);
+    display: none;
+    width: 0;
+  }
+}
+
+@keyframes RightIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes RightOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(50%);
+    display: none;
+    width: 0;
+  }
+}
+
+.left-in {
+  animation: LeftIn 1s 1;
+  animation-fill-mode: forwards;
+  white-space: nowrap;
+}
+
+.left-out {
+  animation: LeftOut 1s 1;
+  animation-fill-mode: forwards;
+  white-space: nowrap;
+}
+
+.right-in {
+  animation: RightIn 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.right-out {
+  animation: RightOut 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.slide-left-enter,
+.slide-right-leave-active {
+  animation: LeftOut 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.slide-left-leave-active,
+.slide-right-enter {
+  animation: RightIn 1s 1;
+  animation-fill-mode: forwards;
+}
