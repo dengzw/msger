@@ -1,0 +1,52 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationStyle": "custom",
+			"disableScroll": true
+		}
+	}, {
+		"path": "pages/ued/index",
+		"style": {
+			"navigationStyle": "custom",
+			"navigationBarTitleText": "UED"
+		}
+	}, {
+		"path": "pages/blog/blog",
+		"style": {}
+	}, {
+		"path": "pages/city/city",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/coffee/coffee",
+		"style": {
+			"navigationStyle": "custom",
+			"disableScroll": true
+		}
+	}, {
+		"path": "pages/webgl/webgl",
+		"style": {}
+	}, {
+		"path": "pages/city/detail",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/web/web",
+		"style": {}
+	}, {
+		"path": "pages/about/about",
+		"style": {
+			"navigationStyle": "custom",
+			"disableScroll": true
+		}
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#2c3142",
+		"backgroundColor": "#2c3142"
+	}
+}
